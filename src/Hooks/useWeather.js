@@ -69,12 +69,21 @@ const useWeather = () => {
 
   // fetch weather data on component mount
   useEffect(() => {
+    setLoading({
+      ...loading,
+      state: true,
+      message: "Finding weather location data...",
+    });
     navigator.geolocation.getCurrentPosition((position) => {
       fetchWeatherData(position.coords.latitude, position.coords.longitude);
     });
   }, []);
 
-  return <div></div>;
+  return {
+    weatherData,
+    loading,
+    error,
+  };
 };
 
 export default useWeather;
