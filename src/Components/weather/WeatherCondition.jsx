@@ -1,4 +1,5 @@
 import TempIcon from "../../assets/icons//temp-max.svg";
+import TempMinIcon from "../../assets/icons//temp-min.svg";
 import HumadityIcon from "../../assets/icons/humidity.svg";
 import CloudyIcon from "../../assets/icons/cloud.svg";
 import WindIcon from "../../assets/icons/wind.svg";
@@ -21,7 +22,7 @@ const WeatherCondition = () => {
           <span>Temp min</span>
           <div className="inline-flex space-x-4">
             <p>19°</p>
-            <img src={TempIcon} alt="temp-min" />
+            <img src={TempMinIcon} alt="temp-min" />
           </div>
         </li>
         <li className="text-sm lg:text-lg flex items-center justify-between space-x-4">
