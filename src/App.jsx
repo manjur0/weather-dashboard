@@ -4,7 +4,7 @@ import { WeatherProvider } from "./Provider";
 const App = () => {
   return (
     <WeatherProvider>
-      <div className="grid place-items-center h-screen">
+      <div className="grid place-items-center h-screen ">
         <Header />
         <main>
           <section>
